@@ -1,0 +1,8 @@
+fav_drink1 = input()
+fav_drink2 = input()
+print(f'{fav_drink1} : {len(fav_drink1)}')
+print(f'{fav_drink2} : {len(fav_drink2)}')
+
+# Nice example of how to use the f'{}' system 
+# to neatly display both variables and 
+# strings, in-line, without excessive "quote hopscotch"

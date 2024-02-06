@@ -1,0 +1,26 @@
+calories = (((age * .2757) + (Weight * .03295) + (HeartRate * 1.0781) - 75.4991) * Time) / 8.368
+
+Inputs:
+age in years
+weight in lbs
+heart rate in bpm
+time in minutes
+
+output:
+avg calories burned
+
+outputs must have 2 digits after the decimal point
+
+print(f'Calories: {calories:.2f} calories')
+
+
+''' Calories = ((Age x 0.2757) + (Weight x 0.03295) + (Heart Rate x 1.0781) — 75.4991) x Time / 8.368 '''
+
+Age = float(input())
+Weight = float(input())
+HeartRate = float(input())
+Time = float(input())
+
+calories = (((Age * .2757) + (Weight * .03295) + (HeartRate * 1.0781) - 75.4991) * Time) / 8.368
+
+print(f'Calories: {calories:.2f} calories')

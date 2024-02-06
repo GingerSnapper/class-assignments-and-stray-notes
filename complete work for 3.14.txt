@@ -1,0 +1,61 @@
+############################################################################################
+# input (ints): 
+#
+# current price
+# last month's price
+#
+#
+# output: 
+#
+# summary of the current price in dollars
+# the change since last month in dollars
+# the est. monthly mortgage, same
+#
+#
+# formula: 
+#
+# (current_price * 0.051) / 12
+#
+#
+# notes: 
+# 1) we're gonna use the f'{}' tool to get this all on the same line for the first line
+# 2) Then a print for the following. 
+# This should help us keep the spacing nice and even without too much fuss.
+#
+#
+# Code prelim:
+#
+# inputs will be rendered as 
+# current_price
+# last_months_price
+#
+#
+# recipe: input, apply formula, output
+############################################################################################
+
+
+import math
+current_price = int(input())
+last_months_price = int(input())
+
+print(f'This house is ${current_price}. The change is ${current_price - last_months_price} since last month.')
+print(f'The estimated monthly mortgage is ${(current_price * 0.051) / 12:.2f}.')
+
+############################################################################################
+# POST-GAME NOTES
+# This worked, but not the way I thought it might. 
+#
+# I wanted to not worry about the code displaying an incorrect direction for the change in price
+# My initial response to the directions was to render the only given example, 
+# calculating the difference in the two prices, and 'baking in' a "-" symbol after the "$":
+#
+# $-10000
+#
+# The problem is that in the event the price went UP, we would still be stuck with a "-".
+#
+# Second, I thought maybe an absolute value could solve this, given we don't know which number 
+# will be higher, but that ONLY gave me a positive direction of change. 
+#
+# Finally, I realized i could simply code it as: current_price - last_months_price, 
+# and Python would take care of rendering the difference appropriately, with or without a hyphen!!
+############################################################################################

@@ -1,0 +1,16 @@
+# example phone number = 8005551212
+
+phone_number = int(input())
+
+area_code = phone_number // 10**7           # this yields everything from 7 digits in, to the left. 
+                                            # We've shifted right 7 digits, and are given as a result 
+                                            # only the first 3 digits, the area code (800)
+
+prefix = phone_number % 10**7 // 10**4      # Now we've modulo divided the right-most 7 digits (5551212)
+                                            # then floor-divided the last 4 digits away (-1212)
+                                            # and given ourselves only the remaining first 3 digits (555)
+
+line_number = phone_number % 10**4          # lastly, we've taken the phone number and modulo-divided 
+                                            # away all digits except the remainder, the last 4 digits (1212)
+
+print(f'({area_code}) {prefix}-{line_number}')

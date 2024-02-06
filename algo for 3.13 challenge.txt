@@ -1,0 +1,24 @@
+input caf in mg
+
+caf has a half life of 6 hours
+
+output caf levels after 6, 12, 24 hours
+
+given, say 100
+after the first 6, half (50)
+after 12, one quarter (25)
+after 24, one sixteenth (
+
+100 
+6 hrs
+/ 2 = 50
+12 hrs
+/ 2 = 25
+18 hrs
+/ 2 = 12.50
+24 hrs
+/ 2 = 6.75
+
+After 6 hours: 50.00 mg
+After 12 hours: 25.00 mg
+After 24 hours: 6.25 mg
